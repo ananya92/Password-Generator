@@ -31,4 +31,20 @@ textarea{
      border-radius: 20px;
      padding: 5px 0;
      width: 100%;
+     border: none;
+     font-size: large;
+ }
+
+ h2,h1 {  
+   color: rgb(75, 74, 74);
+ }
+
+ #generate {
+     background-color: rgb(168, 3, 3);
+     color: white;
+ }
+
+ #copy {
+    background-color: rgb(148, 148, 148);
+    color: white;
  }
