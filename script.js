@@ -11,10 +11,19 @@ window.onload = function() {
         hasSpecialChars = confirm("Do you want special charaters?");
         hasNumericChars = confirm("Do you want numbers?");
         hasLowercaseChars = confirm("Do you want lowercase alphabets?");
-        hasUppercaseChars = confirm("Do you want uppercase alphabets?")
+        hasUppercaseChars = confirm("Do you want uppercase alphabets?");
+
+        if(hasSpecialChars || hasNumericChars || hasLowercaseChars || hasUppercaseChars) {      //validating that atleast one charater type is selected
+
+        }
+        else {
+            alert("Please select atleast one charater type. Try again!");
+            window.onload();                                                //Calling the onload function again so that user can retry
+        }
     }
     else {
-        alert("Please enter length between 8 and 128");
-        window.onload();                                    //Calling the whole function again so that user can retry
+        alert("Please enter length between 8 and 128. Try again!");
+        window.onload();                                                    //Calling the onload function again so that user can retry
     }
+
 }
