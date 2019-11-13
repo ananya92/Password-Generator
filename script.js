@@ -15,5 +15,6 @@ window.onload = function() {
     }
     else {
         alert("Please enter length between 8 and 128");
+        window.onload();                                    //Calling the whole function again so that user can retry
     }
 }
