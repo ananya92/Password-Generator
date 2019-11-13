@@ -4,5 +4,31 @@ body, html {
 }
 
 body {
-    background-image: url(../images/so-white.png);
+    background-image: url(../images/triangle-mosaic.png);
 }
+
+header {
+    margin: 20px 0 40px 0;
+}
+#main-content {
+    background-color: white;
+    box-shadow: 0px 0px 8px #888888;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+textarea{
+    width: 100%;
+    border: 2.5px dashed #dddddd;
+    border-radius: 10px;
+    margin: 10px 0;
+}
+ hr {
+    margin: 0px; 
+ }
+ button {
+     margin: 20px 0;
+     border-radius: 20px;
+     padding: 5px 0;
+     width: 100%;
+ }
