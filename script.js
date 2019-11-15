@@ -27,7 +27,7 @@ window.onload = function() {
 
 function generatePassword() {
     var generatedPassword = "";                                     //string variable storing the generated password
-    var specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~";      //string variable storing all special characters
+    var specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"+'"';      //string variable storing all special characters
     var numericCharacters = "0123456789";                           //string variable storing all numeric characters
     var lowercaseCharacters = "abcdefghijklmnopqrstuvwxyz";         //string variable storing all lowercase alphabets
     var uppercaseCharacters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";         //string variable storing all uppercase alphabets
@@ -83,5 +83,6 @@ function generatePassword() {
 }
 
 function copyPassword() {
-    
+    document.getElementById("password").select();
+    document.execCommand("copy");
 }
