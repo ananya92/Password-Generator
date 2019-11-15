@@ -14,12 +14,11 @@ function generatePassword() {
         needUppercaseChars = document.getElementById("uppercase").checked;
 
         if(!(needSpecialChars || needNumericChars || needLowercaseChars || needUppercaseChars)) {      //validating that atleast one charater type is selected
-            alert("Please select atleast one charater type. Try again!");
-            window.location.reload(true);                                              //Forcing the page to reload from server and not from HTTP cache so that user can retry
+            alert("Please select atleast one charater type.");
         }
     }
     else {
-        alert("Please enter length between 8 and 128. Try again!");
+        alert("Please enter a number between 8 and 128. Try again!");
         window.location.reload(true);                                                 //Forcing the page to reload from server and not from HTTP cache so that user can retry
     }
 
