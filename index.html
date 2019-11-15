@@ -18,17 +18,27 @@
             <div id="main-content">
                 <h2>Generate a Password</h2>
                 <hr>
-                <form class="text-center">                                    <!--Form to take in user's preferences for password length and character preferences-->
+                <form class="text-center">                    <!--Form to take in user's preferences for password length and character preferences-->                  
                   <label for="passwordLength">Enter password length:</label> 
-                  <input type="text" id="passwordLength"></br>
-                  <label for="specialChar">Special characters</label>
-                  <input type="checkbox" name="characterPreference" id="specialChar" value="specialChar" class="checkbox">
-                  <label for="number">Numbers</label>
-                  <input type="checkbox" name="characterPreference" id="number" value="number" class="checkbox">
-                  <label for="uppercase">Uppercase</label>
-                  <input type="checkbox" name="characterPreference" id="uppercase" value="uppercase" class="checkbox">
-                  <label for="lowercase">Lowercase</label>
-                  <input type="checkbox" name="characterPreference" id="lowercase" value="lowercase" class="checkbox">
+                  <input type="text" id="passwordLength"></br>                                                 
+                  <div class="row justify-content-center">
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                      <label for="specialChar">Special character</label>
+                      <input type="checkbox" name="characterPreference" id="specialChar" value="specialChar" class="checkbox">    
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                      <label for="number">Number</label>
+                      <input type="checkbox" name="characterPreference" id="number" value="number" class="checkbox">    
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                      <label for="uppercase">Uppercase</label>
+                      <input type="checkbox" name="characterPreference" id="uppercase" value="uppercase" class="checkbox">    
+                    </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                      <label for="lowercase">Lowercase</label>
+                      <input type="checkbox" name="characterPreference" id="lowercase" value="lowercase" class="checkbox">
+                    </div>
+                  </div> 
                 </form>
                 <textarea class="text-center"
                   readonly
