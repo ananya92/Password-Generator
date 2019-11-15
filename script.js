@@ -4,14 +4,14 @@ function generatePassword() {
     var needNumericChars;            //Variable to store if numeric charaters are required in password
     var needLowercaseChars;          //Variable to store if lowercase charaters are required in password
     var needUppercaseChars;          //Variable to store if uppercase charaters are required in password
-    
-    passwordLength = prompt("Please enter the length of password to be generated");
+
+    passwordLength = parseInt(document.getElementById("passwordLength").value);
 
     if((passwordLength != null) && (passwordLength > 7) && (passwordLength < 129)) {
-        needSpecialChars = confirm("Do you want special charaters?");
-        needNumericChars = confirm("Do you want numbers?");
-        needLowercaseChars = confirm("Do you want lowercase alphabets?");
-        needUppercaseChars = confirm("Do you want uppercase alphabets?");
+        needSpecialChars = document.getElementById("specialChar").checked;
+        needNumericChars = document.getElementById("number").checked;
+        needLowercaseChars = document.getElementById("lowercase").checked;
+        needUppercaseChars = document.getElementById("uppercase").checked;
 
         if(!(needSpecialChars || needNumericChars || needLowercaseChars || needUppercaseChars)) {      //validating that atleast one charater type is selected
             alert("Please select atleast one charater type. Try again!");

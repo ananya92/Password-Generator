@@ -18,20 +18,32 @@
             <div id="main-content">
                 <h2>Generate a Password</h2>
                 <hr>
+                <form class="text-center">                                    <!--Form to take in user's preferences for password length and character preferences-->
+                  <label for="passwordLength">Enter password length:</label> 
+                  <input type="text" id="passwordLength"></br>
+                  <label for="specialChar">Special characters</label>
+                  <input type="checkbox" name="characterPreference" id="specialChar" value="specialChar" class="checkbox">
+                  <label for="number">Numbers</label>
+                  <input type="checkbox" name="characterPreference" id="number" value="number" class="checkbox">
+                  <label for="uppercase">Uppercase</label>
+                  <input type="checkbox" name="characterPreference" id="uppercase" value="uppercase" class="checkbox">
+                  <label for="lowercase">Lowercase</label>
+                  <input type="checkbox" name="characterPreference" id="lowercase" value="lowercase" class="checkbox">
+                </form>
                 <textarea class="text-center"
                   readonly
                   id="password"
                   placeholder="Your Secure Password"
                   aria-label="Generated Password"
-                  rows="4" cols="100%"
-                ></textarea>
+                  rows="4" cols="100%">
+                </textarea>
                 <hr>
                 <div class="row justify-content-between text-center">
                   <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                    <button id="generate" onclick="generatePassword()">Generate Password</button>   <!--calling generatePassword() when this button is clicked-->
+                    <button id="generate" onclick="generatePassword()">Generate Password</button>   <!--calling generatePassword() to generate random password when this button is clicked-->
                   </div>
                   <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
-                    <button id="copy" onclick="copyPassword()">Copy to Clipboard</button>           <!--calling copyPassword() when this button is clicked-->
+                    <button id="copy" onclick="copyPassword()">Copy to Clipboard</button>           <!--calling copyPassword() to copy the generated password to clipboard when this button is clicked-->
                   </div>
                 </div>
             </div>
