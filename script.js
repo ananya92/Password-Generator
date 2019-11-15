@@ -1,11 +1,10 @@
-var passwordLength = 0;             //Variable to store length of password
-var needSpecialChars;            //Variable to store if special charaters are required in password
-var needNumericChars;            //Variable to store if numeric charaters are required in password
-var needLowercaseChars;          //Variable to store if lowercase charaters are required in password
-var needUppercaseChars;          //Variable to store if uppercase charaters are required in password
-
-window.onload = function() {
-    console.log(passwordLength);
+function generatePassword() {
+    var passwordLength = 0;             //Variable to store length of password
+    var needSpecialChars;            //Variable to store if special charaters are required in password
+    var needNumericChars;            //Variable to store if numeric charaters are required in password
+    var needLowercaseChars;          //Variable to store if lowercase charaters are required in password
+    var needUppercaseChars;          //Variable to store if uppercase charaters are required in password
+    
     passwordLength = prompt("Please enter the length of password to be generated");
 
     if((passwordLength != null) && (passwordLength > 7) && (passwordLength < 129)) {
@@ -23,9 +22,7 @@ window.onload = function() {
         alert("Please enter length between 8 and 128. Try again!");
         window.location.reload(true);                                                 //Forcing the page to reload from server and not from HTTP cache so that user can retry
     }
-}
 
-function generatePassword() {
     var generatedPassword = "";                                     //string variable storing the generated password
     var specialCharacters = "!#$%&'()*+,-./:;<=>?@[\]^_`{|}~"+'"';      //string variable storing all special characters
     var numericCharacters = "0123456789";                           //string variable storing all numeric characters
