@@ -21,23 +21,24 @@
                 <hr>
                 <form class="text-center">                    <!--Form to take in user's preferences for password length and character preferences-->                  
                   <label for="passwordLength">Enter password length:</label> 
-                  <input type="text" id="passwordLength"></br>                                                 
+                  <input type="text" id="passwordLength" value="16"></br>  
+                  <p>Please select atleast one of the following character options below :</p>                                               
                   <div class="row justify-content-center">
-                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 text-sm-right text-md-center">
                       <label for="specialChar">Special character</label>
-                      <input type="checkbox" name="characterPreference" id="specialChar" value="specialChar" class="checkbox">    
+                      <input type="checkbox" name="characterPreference" id="specialChar" value="specialChar" class="checkbox">                          
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 text-sm-left text-md-center">
+                        <label for="uppercase">Uppercase</label>
+                        <input type="checkbox" name="characterPreference" id="uppercase" value="uppercase" class="checkbox">    
+                      </div>
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 text-sm-right text-md-center">
                       <label for="number">Number</label>
-                      <input type="checkbox" name="characterPreference" id="number" value="number" class="checkbox">    
+                      <input type="checkbox" name="characterPreference" id="number" value="number" class="checkbox" checked="true">    
                     </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
-                      <label for="uppercase">Uppercase</label>
-                      <input type="checkbox" name="characterPreference" id="uppercase" value="uppercase" class="checkbox">    
-                    </div>
-                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2">
+                    <div class="col-sm-6 col-md-3 col-lg-3 col-xl-2 text-sm-left text-md-center">
                       <label for="lowercase">Lowercase</label>
-                      <input type="checkbox" name="characterPreference" id="lowercase" value="lowercase" class="checkbox">
+                      <input type="checkbox" name="characterPreference" id="lowercase" value="lowercase" class="checkbox" checked="true">
                     </div>
                   </div> 
                 </form>
@@ -46,8 +47,7 @@
                   id="password"
                   placeholder="Your Secure Password"
                   aria-label="Generated Password"
-                  rows="4" cols="100%">
-                </textarea>
+                  rows="4" cols="100%"></textarea>
                 <hr>
                 <div class="row justify-content-between text-center">
                   <div class="col-sm-6 col-md-4 col-lg-4 col-xl-4">
