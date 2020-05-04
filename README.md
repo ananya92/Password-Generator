@@ -31,3 +31,6 @@ For companies that handle large amounts of sensitive data, weak passwords can po
 
 https://ananya92.github.io/Password-Generator/
 
+## Application Screenshot
+![Project Snapshot](https://github.com/ananya92/My-Portfolio/blob/master/src/components/projects/img/pr11_1.PNG)
+
